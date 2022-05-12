@@ -1,0 +1,15 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro %} {% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+{% endblock %} {% block content %}
+<div class="container" id="allsources">
+  <div class="overlay container-fluid d-flex">
+    <h2 class="text-center title1 art">News Articles</h2>
+    <hr />
+    {{macro.display_new_articles(health)}}
+
+    <!-- <h2 class="text-center title1">Health News Articles</h2>
+    {{macro.display_new_articles(health)}} -->
+  </div>
+</div>
+{% endblock %}

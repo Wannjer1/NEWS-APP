@@ -2,7 +2,7 @@
 from flask import render_template
 from . import main
 from ..requests import get_articles,get_sources,search_articles,articles_source
-from app import app
+# from app import app
 
 # views 
 @main.route('/')
